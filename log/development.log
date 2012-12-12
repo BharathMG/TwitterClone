@@ -1,0 +1,925 @@
+/!\ FAILSAFE /!\  Wed Dec 12 14:28:16 +0530 2012
+  Status: 500 Internal Server Error
+  Unknown database 'projectname_development'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:47:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/webrick.rb:48:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/webrick.rb:14:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Wed Dec 12 15:00:16 +0530 2012
+  Status: 500 Internal Server Error
+  Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:47:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/webrick.rb:48:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/webrick.rb:14:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Wed Dec 12 15:05:07 +0530 2012
+  Status: 500 Internal Server Error
+  Unknown database 'projectname_development'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:47:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `each'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/webrick.rb:48:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/webrick.rb:14:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2012-12-12 15:07:33) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (111.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (124.1ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20121212093943)
+  [4;36;1mSQL (109.7ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20121212093943')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2012-12-12 15:18:52) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 44ms (View: 2, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:19:08) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-12-12 15:19:09) [GET]
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/new
+Completed in 17ms (View: 7, DB: 6) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-12-12 15:19:21) [POST]
+  Parameters: {"commit"=>"Create", "user"=>{"email"=>"dkd", "name"=>"Bharat"}, "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA="}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`email`, `name`, `updated_at`, `created_at`) VALUES('dkd', 'Bharat', '2012-12-12 09:49:21', '2012-12-12 09:49:21')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 9ms (DB: 3) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-12-12 15:19:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 9ms (View: 4, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:19:24) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (5.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 14ms (View: 5, DB: 6) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-12-12 15:19:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (5.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 11ms (View: 2, DB: 6) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:19:29) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 9ms (View: 4, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20121212093943)
+Migrating to CreatePosts (20121212095041)
+  [4;36;1mSQL (124.0ms)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `post` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20121212095041')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2012-12-12 15:21:00) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2012-12-12 15:21:02) [GET]
+  [4;35;1mPost Columns (5.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 17ms (View: 8, DB: 6) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2012-12-12 15:21:08) [POST]
+  Parameters: {"authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "post"=>{"name"=>"fefe", "post"=>"efe"}, "commit"=>"Create"}
+  [4;36;1mPost Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO `posts` (`created_at`, `name`, `post`, `updated_at`) VALUES('2012-12-12 09:51:08', 'fefe', 'efe', '2012-12-12 09:51:08')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 8ms (DB: 3) | 302 Found [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2012-12-12 15:21:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 10ms (View: 4, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2012-12-12 15:21:10) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 9ms (View: 4, DB: 3) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-12-12 15:21:57) [GET]
+  [4;36;1mUser Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/new
+Completed in 54ms (View: 45, DB: 6) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-12-12 15:22:00) [POST]
+  Parameters: {"authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Create", "user"=>{"name"=>"de", "email"=>"de"}}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`created_at`, `name`, `updated_at`, `email`) VALUES('2012-12-12 09:52:00', 'de', '2012-12-12 09:52:00', 'de')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/2
+Completed in 9ms (DB: 3) | 302 Found [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-12-12 15:22:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 9ms (View: 4, DB: 2) | 200 OK [http://localhost/users/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:22:03) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mUser Columns (5.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 18ms (View: 9, DB: 6) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2012-12-12 15:22:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (7.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 20ms (View: 10, DB: 7) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2012-12-12 15:22:07) [PUT]
+  Parameters: {"id"=>"1", "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Update", "user"=>{"name"=>"Bharat", "email"=>"dkds"}}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2012-12-12 09:52:07', `email` = 'dkds' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 9ms (DB: 3) | 302 Found [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-12-12 15:22:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 45ms (View: 39, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:22:08) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 15ms (View: 6, DB: 6) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2012-12-12 15:22:11) [DELETE]
+  Parameters: {"id"=>"2", "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA="}
+  [4;36;1mUser Columns (5.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Destroy (1.5ms)[0m   [0mDELETE FROM `users` WHERE `id` = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed in 12ms (DB: 8) | 302 Found [http://localhost/users/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:22:11) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 9ms (View: 4, DB: 2) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2012-12-12 15:22:14) [DELETE]
+  Parameters: {"id"=>"1", "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA="}
+  [4;35;1mUser Columns (5.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Destroy (0.2ms)[0m   [0;1mDELETE FROM `users` WHERE `id` = 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed in 11ms (DB: 7) | 302 Found [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:22:14) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:46:55) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2012-12-12 15:47:01) [GET]
+  [4;35;1mSQL (32.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Completed in 43ms (View: 1, DB: 33) | 200 OK [http://localhost/rails/info/properties]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index to xml (for 127.0.0.1 at 2012-12-12 15:47:08) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/users.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:47:15) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-12-12 15:47:17) [GET]
+  [4;35;1mUser Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/new
+Completed in 20ms (View: 11, DB: 6) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-12-12 15:47:20) [POST]
+  Parameters: {"user"=>{"name"=>"efe", "email"=>"fef"}, "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Create"}
+  [4;36;1mUser Columns (55.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`created_at`, `name`, `updated_at`, `email`) VALUES('2012-12-12 10:17:20', 'efe', '2012-12-12 10:17:20', 'fef')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/3
+Completed in 62ms (DB: 56) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-12-12 15:47:20) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 9ms (View: 4, DB: 2) | 200 OK [http://localhost/users/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:47:22) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (51.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 59ms (View: 5, DB: 52) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index to xml (for 127.0.0.1 at 2012-12-12 15:47:28) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+  [4;35;1mUser Columns (5.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 51ms (View: 42, DB: 6) | 200 OK [http://localhost/users.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20121212093943)
+Migrating to CreatePosts (20121212095041)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:47:54) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (18.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 34ms (View: 12, DB: 19) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2012-12-12 15:48:02) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 12ms (View: 1, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-12-12 15:48:08) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 13ms (View: 4, DB: 6) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2012-12-12 16:02:09) [GET]
+  [4;36;1mPost Columns (5.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 20ms (View: 11, DB: 6) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2012-12-12 16:02:26) [POST]
+  Parameters: {"authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Create", "post"=>{"name"=>"mkfmfe", "post"=>"kmefkmkmfmkemfkmfekmefmkfmem f vmkfmfmmvkmefmefmekfemfkmfkmfkmffnenffkefmkemfkwmfemfekfmkmefkmkmfmkemfkmfekmefmkfmem f vmkfmfmmvkmefmefmekfemfkmfkmfkmffnenffkefmkemfkwmfemfekfm"}}
+  [4;35;1mPost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2012-12-12 16:04:05) [POST]
+  Parameters: {"authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Create", "post"=>{"name"=>"mkfmfe", "post"=>"fefe"}}
+  [4;36;1mPost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Create (0.3ms)[0m   [0;1mINSERT INTO `posts` (`name`, `post`, `created_at`, `updated_at`) VALUES('mkfmfe', 'fefe', '2012-12-12 10:34:05', '2012-12-12 10:34:05')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/2
+Completed in 9ms (DB: 3) | 302 Found [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2012-12-12 16:04:05) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 10ms (View: 4, DB: 3) | 200 OK [http://localhost/posts/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2012-12-12 16:04:08) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 18ms (View: 8, DB: 6) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2012-12-12 16:04:09) [GET]
+  [4;36;1mPost Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 49ms (View: 5, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2012-12-12 16:04:22) [POST]
+  Parameters: {"authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Create", "post"=>{"name"=>"kmmkd", "post"=>"This migration adds a table called products with a string column called name and a text column called description. A primary key column called id will also be added, however since this is the default we do not need to ask for this. The timestamp columns created_at and updated_at which Active Record populates automatically will also be added. Reversing this migration is as simple as dropping the table.  Migrations are not limited to changi"}}
+  [4;35;1mPost Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2012-12-12 16:05:15) [GET]
+  [4;36;1mPost Columns (5.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 20ms (View: 11, DB: 6) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2012-12-12 16:05:19) [POST]
+  Parameters: {"authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "post"=>{"post"=>"This migration adds a table called products with a string column called name and a text column called description. A primary key column called id will also be added, however since this is the default we do not need to ask for this. The timestamp columns created_at and updated_at which Active Record populates automatically will also be added. Reversing this migration is as simple as dropping the table.  Migrations are not limited to changi", "name"=>"dwdw"}, "commit"=>"Create"}
+  [4;35;1mPost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (undefined method `content' for #<Post:0x1064039e8>):
+  app/controllers/posts_controller.rb:46:in `create'
+  app/controllers/posts_controller.rb:45:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.8ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2012-12-12 16:05:58) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "post"=>{"post"=>"This migration adds a table called products with a string column called name and a text column called description. A primary key column called id will also be added, however since this is the default we do not need to ask for this. The timestamp columns created_at and updated_at which Active Record populates automatically will also be added. Reversing this migration is as simple as dropping the table.  Migrations are not limited to changi", "name"=>"dwdw"}}
+  [4;36;1mPost Columns (41.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 61ms (View: 13, DB: 42) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20121212093943)
+Migrating to CreatePosts (20121212095041)
+Migrating to CreateMicroposts (20121212103741)
+  [4;36;1mSQL (121.1ms)[0m   [0;1mCREATE TABLE `microposts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20121212103741')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `microposts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `microposts`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2012-12-12 16:08:03) [POST]
+  Parameters: {"post"=>{"post"=>"This migration adds a table called products with a string column called name and a text column called description. A primary key column called id will also be added, however since this is the default we do not need to ask for this. The timestamp columns created_at and updated_at which Active Record populates automatically will also be added. Reversing this migration is as simple as dropping the table.  Migrations are not limited to changi", "name"=>"dwdw"}, "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Create"}
+  [4;36;1mPost Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2012-12-12 16:08:07) [POST]
+  Parameters: {"post"=>{"post"=>"This migration adds a table called products with a string column called name and a text column called description. A primary key column called id will also be added, however since this is the default we do not need to ask for this. The timestamp columns created_at and updated_at which Active Record populates automatically will also be added. Reversing this migration is as simple as dropping the table.  Migrations are not limited to changi", "name"=>"dwdw"}, "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Create"}
+  [4;35;1mPost Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 17ms (View: 6, DB: 6) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2012-12-12 16:08:18) [GET]
+  [4;36;1mPost Columns (5.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 14ms (View: 4, DB: 6) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2012-12-12 16:08:23) [POST]
+  Parameters: {"post"=>{"post"=>"This migration adds a table called products with a string column called name and a text column called description. A primary key column called id will also be added, however since this is the default we do not need to ask for this. The timestamp columns created_at and updated_at which Active Record populates automatically will also be added. Reversing this migration is as simple as dropping the table.  Migrations are not limited to changi", "name"=>"fefe"}, "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Create"}
+  [4;35;1mPost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2012-12-12 16:08:29) [GET]
+  [4;36;1mMicropost Load (0.4ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 44ms (View: 6, DB: 1) | 200 OK [http://localhost/microposts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#new (for 127.0.0.1 at 2012-12-12 16:08:30) [GET]
+  [4;35;1mMicropost Columns (15.2ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 27ms (View: 9, DB: 15) | 200 OK [http://localhost/microposts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2012-12-12 16:08:33) [POST]
+  Parameters: {"authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Create", "micropost"=>{"user_id"=>"fefe", "content"=>"fee"}}
+  [4;36;1mMicropost Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `microposts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMicropost Create (0.3ms)[0m   [0;1mINSERT INTO `microposts` (`user_id`, `created_at`, `updated_at`, `content`) VALUES(0, '2012-12-12 10:38:33', '2012-12-12 10:38:33', 'fee')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/1
+Completed in 8ms (DB: 3) | 302 Found [http://localhost/microposts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2012-12-12 16:08:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMicropost Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `microposts`[0m
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 10ms (View: 4, DB: 3) | 200 OK [http://localhost/microposts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2012-12-12 16:08:35) [GET]
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+  [4;35;1mMicropost Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+Completed in 13ms (View: 4, DB: 6) | 200 OK [http://localhost/microposts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2012-12-12 16:08:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMicropost Columns (5.5ms)[0m   [0;1mSHOW FIELDS FROM `microposts`[0m
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 57ms (View: 48, DB: 6) | 200 OK [http://localhost/microposts/1/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2012-12-12 16:08:40) [PUT]
+  Parameters: {"id"=>"1", "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA=", "commit"=>"Update", "micropost"=>{"user_id"=>"2", "content"=>"fee"}}
+  [4;36;1mMicropost Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `microposts`[0m
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMicropost Update (0.3ms)[0m   [0mUPDATE `microposts` SET `updated_at` = '2012-12-12 10:38:40', `user_id` = 2 WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/1
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/microposts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2012-12-12 16:08:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMicropost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://localhost/microposts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2012-12-12 16:08:41) [GET]
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+  [4;36;1mMicropost Columns (24.7ms)[0m   [0;1mSHOW FIELDS FROM `microposts`[0m
+Completed in 32ms (View: 4, DB: 25) | 200 OK [http://localhost/microposts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#new (for 127.0.0.1 at 2012-12-12 16:09:32) [GET]
+  [4;36;1mMicropost Columns (5.8ms)[0m   [0;1mSHOW FIELDS FROM `microposts`[0m
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 21ms (View: 12, DB: 6) | 200 OK [http://localhost/microposts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2012-12-12 16:09:38) [POST]
+  Parameters: {"micropost"=>{"user_id"=>"12", "content"=>"This migration adds a table called products with a string column called name and a text column called description. A primary key column called id will also be added, however since this is the default we do not need to ask for this. The timestamp columns created_at and updated_at which Active Record populates automatically will also be added. Reversing this migration is as simple as dropping the table.  Migrations are not limited to changi"}, "commit"=>"Create", "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA="}
+  [4;35;1mMicropost Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://localhost/microposts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2012-12-12 16:13:26) [POST]
+  Parameters: {"micropost"=>{"user_id"=>"12", "content"=>"This migration adds a table called products with a string column called name and a text column called description. A primary key column called id will also be added, however since this is the default we do not need to ask for this. The timestamp columns created_at and updated_at which Active Record populates automatically will also be added. Reversing this migration is as simple as dropping the table.  Migrations are not limited to changi"}, "commit"=>"Create", "authenticity_token"=>"R9Ps9iSQ5xMdZha1kcgAwgTh7n5S16eOz1SKBUz6CcA="}
+  [4;36;1mMicropost Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `microposts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 20ms (View: 12, DB: 3) | 200 OK [http://localhost/microposts]
