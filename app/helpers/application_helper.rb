@@ -8,4 +8,8 @@ module ApplicationHelper
 			"#{base} | #{@title}"
 		end
 	end
+	def gravatar(user)
+      email_hash = Digest::MD5.hexdigest(user.email).downcase
+      "http://www.gravatar.com/avatar/#{email_hash}"
+  end
 end
