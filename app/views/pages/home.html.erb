@@ -4,23 +4,12 @@
 <title><%= title %></title> </head>
 <%= stylesheet_link_tag 'bootstrap/css/bootstrap.min.css', :media => 'screen' %> 
 <%= stylesheet_link_tag 'custom.css', :media => 'screen' %> 
-<body><h1>New micropost</h1>
-
-<% form_for(@micropost) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :content %><br />
-    <%= f.text_field :content %>
-  </p>
-  <p>
-    <%= f.label :user_id %><br />
-    <%= f.text_field :user_id %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
-
-<%= link_to 'Back', microposts_path %></body>
+<body>
+ 
+<h1>Sample App</h1>
+<p>
+This is the home page for the
+<a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application.
+</p>
+<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %></body>
 </html>
