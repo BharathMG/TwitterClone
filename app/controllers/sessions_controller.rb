@@ -19,5 +19,6 @@ class SessionsController < ApplicationController
       redirect_back_or user
 	end
   end
+  
 
 end

@@ -5,10 +5,23 @@
 <%= stylesheet_link_tag 'bootstrap/css/bootstrap.min.css', :media => 'screen' %> 
 <%= stylesheet_link_tag 'custom.css', :media => 'screen' %> 
 <body>
- 
+ <% if signed_in? %> <table class="front">
+<tr>
+<td class="main">
+	<h2 class="micropost">What's up?</h2>
+	<%= render 'pages/micropost_form' %> 
+	<%= render 'pages/feed' %>
+</td>
+<td class="sidebar round">
+	<%= render 'pages/user_info' %>
+</td> 
+</tr>
+</table>
+<% else %>
 <h1>Freshdesk Demo</h1>
 <p>
 Welcome to Twitter Clone!
 </p>
-<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %></body>
+<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+<% end %></body>
 </html>

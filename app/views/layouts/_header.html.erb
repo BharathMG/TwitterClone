@@ -1,7 +1,7 @@
 <div id="header" class="round">
 <ul class="navigation round">
 <% if signed_in? %>
-	<li><%= link_to "Home", user_path(@current_user) %></li>
+	<li><%= link_to "Home", root_path %></li>
 	<li><%= link_to "Edit", edit_user_path(@current_user) %></li>
 	<% else %>
 	  <li><%= link_to "Home", root_path %></li>

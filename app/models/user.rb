@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	has_many :microposts
+	has_many :microposts , :dependent => :destroy
 	
 	attr_accessor :password
 	attr_accessible :name, :email , :password , :password_confirmation
@@ -23,6 +23,9 @@ class User < ActiveRecord::Base
 		self.remember_token = encrypt("#{salt}--#{id}--#{Time.now.utc}") 
 		save_without_validation
 	end
+	def feed
+		Micropost.all(:conditions => ["user_id = ?", id])
+	end
 	private
 	def make_salt 
 			secure_hash("#{Time.now.utc}#{password}")
@@ -34,13 +37,15 @@ class User < ActiveRecord::Base
 		    end
 		end
 
-		def encrypt(string) 
+	def encrypt(string) 
 			secure_hash("#{salt}#{string}")
-		end
-		
-		def secure_hash(string) 
-			Digest::SHA2.hexdigest(string)
-		end 
-	
 	end
+		
+	def secure_hash(string) 
+			Digest::SHA2.hexdigest(string)
+	end 
+	
+
+	
+end
 

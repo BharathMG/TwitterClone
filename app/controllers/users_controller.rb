@@ -1,11 +1,12 @@
+require "will_paginate/array"
 class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   before_filter :authenticate, :only => [:edit, :update , :index ,:destroy]
   before_filter :correct_user, :only => [:edit, :update , :destroy]
   def index
-    @users = User.all
-
+    @users = User.paginate(:page => params[:page])
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
@@ -16,7 +17,8 @@ class UsersController < ApplicationController
   # GET /users/1.xml
   def show
     @user = User.find(params[:id])
-
+    @microposts = @user.microposts.paginate(:page => params[:page])
+    @title = CGI.escapeHTML(@user.name)
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @user }
@@ -88,9 +90,7 @@ class UsersController < ApplicationController
     end
   end
   private 
-  def authenticate
-    deny_access unless signed_in?
-  end
+  
   def correct_user
     @user = User.find(params[:id]) 
     redirect_to(root_path) unless current_user?(@user)
