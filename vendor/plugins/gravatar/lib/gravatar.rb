@@ -57,6 +57,10 @@ module GravatarHelper
       options.reverse_merge!(DEFAULT_OPTIONS)
       size = options.delete(:size)
       size = "#{size}px" if size.is_a?(Integer)
+      if options.delete(:fast)
+        options[:style] = "width:#{size};height:#{size};background:url(#{src}) no-repeat;"
+        content_tag :div, options
+      else
          image_tag src, options.merge(:width => size, :height => size)
       end
     end
@@ -74,7 +78,7 @@ module GravatarHelper
 
     # Return the gravatar URL for the given email address.
     def gravatar_url(email, options={})
-      email_hash = Digest::MD5.hexdigest(email).downcase
+      email_hash = Digest::MD5.hexdigest(email)
       options = DEFAULT_OPTIONS.merge(options)
       options[:default] = CGI::escape(options[:default]) unless options[:default].nil?
       gravatar_api_url(email_hash, options.delete(:ssl)).tap do |url|
