@@ -46,7 +46,7 @@ class MicropostsController < ApplicationController
     @micropost = current_user.microposts.build(params[:micropost])
     respond_to do |format|
       if @micropost.save
-        flash[:success] = "Micropost created successfully"
+        
         format.html { redirect_to(root_path) }
         format.xml  { render :xml => @micropost, :status => :created, :location => @micropost }
       else
