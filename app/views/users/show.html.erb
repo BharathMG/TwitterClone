@@ -4,7 +4,9 @@
 	<table class="profile"> <tr>
 		<td class="main"> <h2>
 			<%= image_tag gravatar(@user) %>
-			<%= h @user.name %> </h2>
+			<%= h @user.name %> 
+		</h2>
+		<%= render 'follow_form' if signed_in? %>
 				<% unless @user.microposts.empty? %>
 					<table class="microposts">
 						 <%= render @microposts %>

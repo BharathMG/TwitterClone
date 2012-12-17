@@ -3,10 +3,12 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :posts
 
-  map.resources :users
+  
 
   map.resources :sessions, :only => [:new, :create, :destroy]
   map.resources :microposts, :only => [:create, :destroy]
+  map.resources  :relationships, :only => [:create, :destroy]
+  map.resources :users, :member => { :following => :get, :followers => :get }
 
 map.signin '/signin', :controller => 'sessions', :action => 'new'
 map.signout '/signout', :controller => 'sessions', :action => 'destroy'

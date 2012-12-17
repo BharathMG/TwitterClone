@@ -5,9 +5,8 @@ background: #cff;
 }
 #header { padding-top: 20px;
 }
-#header img { padding: 1em; background: #fff;
-}
-#content { margin-top: 1em; font-size: 120%; padding: 20px; background: #fff;
+
+#content {  font-size: 120%; padding: 20px; background: #fff;
 }
 /* Links */
 a{
