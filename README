@@ -1,5 +1,12 @@
 TwitterClone  
 
-   Cloning twitter with User and Microposts. (Initial Commit) 
+   Cloning twitter with User and Microposts.
 
-   Features will be added through subsequent commits.
+   Features Implemented :
+       1) Followers
+       2) FOllowing
+       3) Posting tweets
+       4) Tweets destory, new
+       5) Sign up, sign in Sessions
+
+   Feel free to fork !
